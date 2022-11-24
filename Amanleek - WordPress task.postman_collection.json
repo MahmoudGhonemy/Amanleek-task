@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "83444455-aee8-4405-97bb-c5d284fc7c6f",
+		"name": "Amanleek : WordPress task",
+		"description": "# Introduction\nlists data about some articals in my blog in the wordpress\n\n# Overview\nI used bitnami environment to get have my blog in wordpress\nthen I added some posts (dummy posts) in this blog\nafter that ... going to the HTTP requests in the postman to see the api results\nusing the get method : http://localhost/wordpress/index.php/wp-json/wp/v2/posts (local host / path )\n\nit response with all the data about the dummy posts that have been added",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23738113"
+	},
+	"item": [
+		{
+			"name": "http://localhost/wordpress/index.php/wp-json/wp/v2/posts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost/wordpress/index.php/wp-json/wp/v2/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"wordpress",
+						"index.php",
+						"wp-json",
+						"wp",
+						"v2",
+						"posts"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/wordpress/index.php/wp-json/wp/v2/posts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"wordpress",
+								"index.php",
+								"wp-json",
+								"wp",
+								"v2",
+								"posts"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 24 Nov 2022 15:18:21 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Vary",
+							"value": "Cookie,Accept-Encoding,Origin"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.25"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						},
+						{
+							"key": "Link",
+							"value": "<http://localhost/wordpress/wp-json/>; rel=\"https://api.w.org/\""
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "X-WP-Total, X-WP-TotalPages, Link"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Authorization, X-WP-Nonce, Content-Disposition, Content-MD5, Content-Type"
+						},
+						{
+							"key": "X-WP-Total",
+							"value": "3"
+						},
+						{
+							"key": "X-WP-TotalPages",
+							"value": "1"
+						},
+						{
+							"key": "Allow",
+							"value": "GET"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "Content-Length",
+							"value": "683"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 11,\n        \"date\": \"2022-11-24T11:33:28\",\n        \"date_gmt\": \"2022-11-24T11:33:28\",\n        \"guid\": {\n            \"rendered\": \"http://localhost/wordpress/?p=11\"\n        },\n        \"modified\": \"2022-11-24T11:33:28\",\n        \"modified_gmt\": \"2022-11-24T11:33:28\",\n        \"slug\": \"dummy-post-3\",\n        \"status\": \"publish\",\n        \"type\": \"post\",\n        \"link\": \"http://localhost/wordpress/2022/11/24/dummy-post-3/\",\n        \"title\": {\n            \"rendered\": \"dummy post 3\"\n        },\n        \"content\": {\n            \"rendered\": \"\\n<p>one more post</p>\\n\",\n            \"protected\": false\n        },\n        \"excerpt\": {\n            \"rendered\": \"<p>one more post</p>\\n\",\n            \"protected\": false\n        },\n        \"author\": 1,\n        \"featured_media\": 0,\n        \"comment_status\": \"open\",\n        \"ping_status\": \"open\",\n        \"sticky\": false,\n        \"template\": \"\",\n        \"format\": \"standard\",\n        \"meta\": [],\n        \"categories\": [\n            1\n        ],\n        \"tags\": [],\n        \"_links\": {\n            \"self\": [\n                {\n                    \"href\": \"http://localhost/wordpress/wp-json/wp/v2/posts/11\"\n                }\n            ],\n            \"collection\": [\n                {\n                    \"href\": \"http://localhost/wordpress/wp-json/wp/v2/posts\"\n                }\n            ],\n            \"about\": [\n                {\n                    \"href\": \"http://localhost/wordpress/wp-json/wp/v2/types/post\"\n                }\n            ],\n            \"author\": [\n                {\n                    \"embeddable\": true,\n                    \"href\": \"http://localhost/wordpress/wp-json/wp/v2/users/1\"\n                }\n            ],\n            \"replies\": [\n                {\n                    \"embeddable\": true,\n                    \"href\": \"http://localhost/wordpress/wp-json/wp/v2/comments?post=11\"\n                }\n            ],\n            \"version-history\": [\n                {\n                    \"count\": 1,\n                    \"href\": \"http://localhost/wordpress/wp-json/wp/v2/posts/11/revisions\"\n                }\n            ],\n            \"predecessor-version\": [\n                {\n                    \"id\": 12,\n                    \"href\": \"http://localhost/wordpress/wp-json/wp/v2/posts/11/revisions/12\"\n                }\n            ],\n            \"wp:attachment\": [\n                {\n                    \"href\": \"http://localhost/wordpress/wp-json/wp/v2/media?parent=11\"\n                }\n            ],\n            \"wp:term\": [\n                {\n                    \"taxonomy\": \"category\",\n                    \"embeddable\": true,\n                    \"href\": \"http://localhost/wordpress/wp-json/wp/v2/categories?post=11\"\n                },\n                {\n                    \"taxonomy\": \"post_tag\",\n                    \"embeddable\": true,\n                    \"href\": \"http://localhost/wordpress/wp-json/wp/v2/tags?post=11\"\n                }\n            ],\n            \"curies\": [\n                {\n                    \"name\": \"wp\",\n                    \"href\": \"https://api.w.org/{rel}\",\n                    \"templated\": true\n                }\n            ]\n        }\n    },\n    {\n        \"id\": 9,\n        \"date\": \"2022-11-24T11:33:06\",\n        \"date_gmt\": \"2022-11-24T11:33:06\",\n        \"guid\": {\n            \"rendered\": \"http://localhost/wordpress/?p=9\"\n        },\n        \"modified\": \"2022-11-24T11:33:06\",\n        \"modified_gmt\": \"2022-11-24T11:33:06\",\n        \"slug\": \"dummy-post-2\",\n        \"status\": \"publish\",\n        \"type\": \"post\",\n        \"link\": \"http://localhost/wordpress/2022/11/24/dummy-post-2/\",\n        \"title\": {\n            \"rendered\": \"dummy post 2\"\n        },\n        \"content\": {\n            \"rendered\": \"\\n<p>another post</p>\\n\",\n            \"protected\": false\n        },\n        \"excerpt\": {\n            \"rendered\": \"<p>another post</p>\\n\",\n            \"protected\": false\n        },\n        \"author\": 1,\n        \"featured_media\": 0,\n        \"comment_status\": \"open\",\n        \"ping_status\": \"open\",\n        \"sticky\": false,\n        \"template\": \"\",\n        \"format\": \"standard\",\n        \"meta\": [],\n        \"categories\": [\n            1\n        ],\n        \"tags\": [],\n        \"_links\": {\n            \"self\": [\n                {\n                    \"href\": \"http://localhost/wordpress/wp-json/wp/v2/posts/9\"\n                }\n            ],\n            \"collection\": [\n                {\n                    \"href\": \"http://localhost/wordpress/wp-json/wp/v2/posts\"\n                }\n            ],\n            \"about\": [\n                {\n                    \"href\": \"http://localhost/wordpress/wp-json/wp/v2/types/post\"\n                }\n            ],\n            \"author\": [\n                {\n                    \"embeddable\": true,\n                    \"href\": \"http://localhost/wordpress/wp-json/wp/v2/users/1\"\n                }\n            ],\n            \"replies\": [\n                {\n                    \"embeddable\": true,\n                    \"href\": \"http://localhost/wordpress/wp-json/wp/v2/comments?post=9\"\n                }\n            ],\n            \"version-history\": [\n                {\n                    \"count\": 1,\n                    \"href\": \"http://localhost/wordpress/wp-json/wp/v2/posts/9/revisions\"\n                }\n            ],\n            \"predecessor-version\": [\n                {\n                    \"id\": 10,\n                    \"href\": \"http://localhost/wordpress/wp-json/wp/v2/posts/9/revisions/10\"\n                }\n            ],\n            \"wp:attachment\": [\n                {\n                    \"href\": \"http://localhost/wordpress/wp-json/wp/v2/media?parent=9\"\n                }\n            ],\n            \"wp:term\": [\n                {\n                    \"taxonomy\": \"category\",\n                    \"embeddable\": true,\n                    \"href\": \"http://localhost/wordpress/wp-json/wp/v2/categories?post=9\"\n                },\n                {\n                    \"taxonomy\": \"post_tag\",\n                    \"embeddable\": true,\n                    \"href\": \"http://localhost/wordpress/wp-json/wp/v2/tags?post=9\"\n                }\n            ],\n            \"curies\": [\n                {\n                    \"name\": \"wp\",\n                    \"href\": \"https://api.w.org/{rel}\",\n                    \"templated\": true\n                }\n            ]\n        }\n    },\n    {\n        \"id\": 6,\n        \"date\": \"2022-11-24T11:32:18\",\n        \"date_gmt\": \"2022-11-24T11:32:18\",\n        \"guid\": {\n            \"rendered\": \"http://localhost/wordpress/?p=6\"\n        },\n        \"modified\": \"2022-11-24T11:32:18\",\n        \"modified_gmt\": \"2022-11-24T11:32:18\",\n        \"slug\": \"dummy-post-1\",\n        \"status\": \"publish\",\n        \"type\": \"post\",\n        \"link\": \"http://localhost/wordpress/2022/11/24/dummy-post-1/\",\n        \"title\": {\n            \"rendered\": \"dummy post 1\"\n        },\n        \"content\": {\n            \"rendered\": \"\\n<p>first post in wordPress</p>\\n\",\n            \"protected\": false\n        },\n        \"excerpt\": {\n            \"rendered\": \"<p>first post in wordPress</p>\\n\",\n            \"protected\": false\n        },\n        \"author\": 1,\n        \"featured_media\": 0,\n        \"comment_status\": \"open\",\n        \"ping_status\": \"open\",\n        \"sticky\": false,\n        \"template\": \"\",\n        \"format\": \"standard\",\n        \"meta\": [],\n        \"categories\": [\n            1\n        ],\n        \"tags\": [],\n        \"_links\": {\n            \"self\": [\n                {\n                    \"href\": \"http://localhost/wordpress/wp-json/wp/v2/posts/6\"\n                }\n            ],\n            \"collection\": [\n                {\n                    \"href\": \"http://localhost/wordpress/wp-json/wp/v2/posts\"\n                }\n            ],\n            \"about\": [\n                {\n                    \"href\": \"http://localhost/wordpress/wp-json/wp/v2/types/post\"\n                }\n            ],\n            \"author\": [\n                {\n                    \"embeddable\": true,\n                    \"href\": \"http://localhost/wordpress/wp-json/wp/v2/users/1\"\n                }\n            ],\n            \"replies\": [\n                {\n                    \"embeddable\": true,\n                    \"href\": \"http://localhost/wordpress/wp-json/wp/v2/comments?post=6\"\n                }\n            ],\n            \"version-history\": [\n                {\n                    \"count\": 1,\n                    \"href\": \"http://localhost/wordpress/wp-json/wp/v2/posts/6/revisions\"\n                }\n            ],\n            \"predecessor-version\": [\n                {\n                    \"id\": 7,\n                    \"href\": \"http://localhost/wordpress/wp-json/wp/v2/posts/6/revisions/7\"\n                }\n            ],\n            \"wp:attachment\": [\n                {\n                    \"href\": \"http://localhost/wordpress/wp-json/wp/v2/media?parent=6\"\n                }\n            ],\n            \"wp:term\": [\n                {\n                    \"taxonomy\": \"category\",\n                    \"embeddable\": true,\n                    \"href\": \"http://localhost/wordpress/wp-json/wp/v2/categories?post=6\"\n                },\n                {\n                    \"taxonomy\": \"post_tag\",\n                    \"embeddable\": true,\n                    \"href\": \"http://localhost/wordpress/wp-json/wp/v2/tags?post=6\"\n                }\n            ],\n            \"curies\": [\n                {\n                    \"name\": \"wp\",\n                    \"href\": \"https://api.w.org/{rel}\",\n                    \"templated\": true\n                }\n            ]\n        }\n    }\n]"
+				},
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/wordpress/index.php/wp-json/wp/v2/posts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"wordpress",
+								"index.php",
+								"wp-json",
+								"wp",
+								"v2",
+								"posts"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		}
+	]
+}
